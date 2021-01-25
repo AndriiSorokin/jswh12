@@ -20,7 +20,7 @@ refs.input.addEventListener('input', debounce(() => {
     .then(updateMarkup)
     .catch(error => console.error(error))
 
-}), 1500)
+}), 500)
 
 function updateMarkup(data) {
  const markup = template(data)
