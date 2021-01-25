@@ -1,6 +1,9 @@
 import css from "./style.css";
 import debounce from 'lodash.debounce'
 import fetchCountries from './fetchCountries'
+import template from './Template/template.hbs'
+
+
 
 
 const refs = {
@@ -12,10 +15,12 @@ refs.input.addEventListener('input', debounce(() => {
 
   const countriesName = refs.input.value
   refs.list.innerHTML = ''
-  fetchCountries(countriesName).then(updateMarkup)
 
-}), 500)
+  fetchCountries(countriesName)
+    .then(updateMarkup)
+    .catch(error => console.error(error))
 
+}), 1500)
 
 function updateMarkup(data) {
  const markup = template(data)
