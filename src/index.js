@@ -3,6 +3,11 @@ import debounce from 'lodash.debounce'
 import fetchCountries from './fetchCountries'
 import template from './Template/template.hbs'
 
+// import { alert,error, defaultModules } from '../node_modules/@pnotify/core/dist/PNotify.js';
+// import * as PNotifyMobile from '../node_modules/@pnotify/mobile/dist/PNotifyMobile.js';
+// import "../node_modules/@pnotify/core/dist/BrightTheme.css";
+// import "../node_modules/@pnotify/core/dist/PNotify.css";
+// defaultModules.set(PNotifyMobile, {});
 
 
 
@@ -26,3 +31,4 @@ function updateMarkup(data) {
  const markup = template(data)
      refs.list.insertAdjacentHTML('beforeend', markup)
 }
+
