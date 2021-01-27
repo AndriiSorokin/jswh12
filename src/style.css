@@ -1,0 +1,37 @@
+body {
+background: url('https://desenio.ie/bilder/artiklar/zoom/7314_2.jpg?imgwidth=435&qt=Poster%20with%20world%20map') repeat no-repeat;
+  z-index: 0;
+  background-size: 100%;
+  max-width: 100%;
+  margin: 0%;
+  padding: 0;
+ text-align: center;
+ color: rgb(255, 123, 0);
+}
+
+h1 {
+  color: black;
+}
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 27px;
+}
+p {
+  font-size: 25px;
+}
+li {
+  font-size: 25px;
+  list-style: none;
+}
+
+input {
+  width: 220px;
+  height: 20px;
+  border-radius: 50px;
+  font-size: 20px;
+  opacity: 40%;
+
+}
